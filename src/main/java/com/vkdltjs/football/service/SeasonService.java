@@ -16,7 +16,7 @@ public class SeasonService {
         this.seasonDAO = seasonDAO;
     }
     public List<Season> getSeasons(Map<String, String> allParams) {
-
+        return null;
 
     }
 }
