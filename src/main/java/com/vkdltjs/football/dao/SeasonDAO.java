@@ -2,6 +2,7 @@ package com.vkdltjs.football.dao;
 
 import com.vkdltjs.football.model.Match;
 import com.vkdltjs.football.model.Season;
+import org.springframework.stereotype.Repository;
 
 import java.sql.Connection;
 import java.util.List;
