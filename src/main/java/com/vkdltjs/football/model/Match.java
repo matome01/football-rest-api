@@ -2,7 +2,6 @@ package com.vkdltjs.football.model;
 
 
 import java.sql.Date;
-import java.sql.Timestamp;
 
 public class Match {
     private final int match_id;
@@ -21,21 +20,27 @@ public class Match {
         this.away_score = away_score;
     }
 
-    public int getMatchId() { return match_id; }
+    public int getMatch_id() {
+        return match_id;
+    }
 
-    public Date getPlay_at() { return play_date; }
+    public Date getPlay_date() {
+        return play_date;
+    }
 
-    public String getTeam1() { return home; }
+    public String getHome() {
+        return home;
+    }
 
-    public String getTeam2() {
+    public String getAway() {
         return away;
     }
 
-    public int getScore1() {
+    public int getHome_score() {
         return home_score;
     }
 
-    public int getScore2() {
+    public int getAway_score() {
         return away_score;
     }
 }

@@ -40,7 +40,7 @@ public class MatchDataAccessService implements MatchDAO{
 
     @Override
     public Connection connect() {
-        String dbFile = "C:\\Users\\HUR HYEONJUN\\Desktop\\database\\england-master\\sport.db";
+        String dbFile = ":resource:sport.db";
         String url = "jdbc:sqlite:"+dbFile;
         Connection conn = null;
         try {
