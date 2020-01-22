@@ -27,8 +27,12 @@ public class MatchDataAccessService implements MatchDAO{
                 String playAt = resultSet.getString("play_at");
                 String home = resultSet.getString("home");
                 String away = resultSet.getString("away");
-                int homeScore = resultSet.getInt("home_score");
-                int awayScore = resultSet.getInt("away_score");
+                Integer homeScore = resultSet.getInt("home_score");
+                Integer awayScore = resultSet.getInt("away_score");
+                if(resultSet.wasNull()) {
+                    homeScore = null;
+                    awayScore = null;
+                }
                 matches.add(new Match(id, Date.valueOf(playAt), home, away, homeScore, awayScore));
             }
 

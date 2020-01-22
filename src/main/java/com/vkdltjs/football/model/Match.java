@@ -8,10 +8,10 @@ public class Match {
     private final Date play_date;
     private final String home;
     private final String away;
-    private final int home_score;
-    private final int away_score;
+    private final Integer home_score;
+    private final Integer away_score;
 
-    public Match(int match_id, Date play_date, String home, String away, int home_score, int away_score) {
+    public Match(int match_id, Date play_date, String home, String away, Integer home_score, Integer away_score) {
         this.match_id = match_id;
         this.play_date = play_date;
         this.home = home;
@@ -36,11 +36,11 @@ public class Match {
         return away;
     }
 
-    public int getHome_score() {
+    public Integer getHome_score() {
         return home_score;
     }
 
-    public int getAway_score() {
+    public Integer getAway_score() {
         return away_score;
     }
 }
