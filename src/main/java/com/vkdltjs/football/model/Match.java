@@ -4,28 +4,28 @@ package com.vkdltjs.football.model;
 import java.sql.Date;
 
 public class Match {
-    private final int match_id;
-    private final Date play_date;
+    private final int matchId;
+    private final Date playDate;
     private final String home;
     private final String away;
-    private final Integer home_score;
-    private final Integer away_score;
+    private final Integer homeScore;
+    private final Integer awayScore;
 
-    public Match(int match_id, Date play_date, String home, String away, Integer home_score, Integer away_score) {
-        this.match_id = match_id;
-        this.play_date = play_date;
+    public Match(int matchId, Date playDate, String home, String away, Integer homeScore, Integer awayScore) {
+        this.matchId = matchId;
+        this.playDate = playDate;
         this.home = home;
         this.away = away;
-        this.home_score = home_score;
-        this.away_score = away_score;
+        this.homeScore = homeScore;
+        this.awayScore = awayScore;
     }
 
-    public int getMatch_id() {
-        return match_id;
+    public int getMatchId() {
+        return matchId;
     }
 
-    public Date getPlay_date() {
-        return play_date;
+    public Date getPlayDate() {
+        return playDate;
     }
 
     public String getHome() {
@@ -36,11 +36,11 @@ public class Match {
         return away;
     }
 
-    public Integer getHome_score() {
-        return home_score;
+    public Integer getHomeScore() {
+        return homeScore;
     }
 
-    public Integer getAway_score() {
-        return away_score;
+    public Integer getAwayScore() {
+        return awayScore;
     }
 }

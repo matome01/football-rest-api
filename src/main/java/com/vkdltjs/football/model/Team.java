@@ -2,23 +2,30 @@ package com.vkdltjs.football.model;
 
 public class Team {
     private final int teamId;
-    private final String teamName;
-    private final String countryName;
+    private final String key;
+    private final String title;
+    private final String synonyms;
 
-    public Team(int teamId, String teamName, String countryName) {
+    public Team(int teamId, String key, String title, String synonyms) {
         this.teamId = teamId;
-        this.teamName = teamName;
-        this.countryName = countryName;
+        this.key = key;
+        this.title = title;
+        this.synonyms = synonyms;
     }
+
     public int getTeamId() {
         return teamId;
     }
 
-    public String getTeamName() {
-        return teamName;
+    public String getKey() {
+        return key;
     }
 
-    public String getCountryName() {
-        return countryName;
+    public String getTitle() {
+        return title;
+    }
+
+    public String getSynonyms() {
+        return synonyms;
     }
 }
