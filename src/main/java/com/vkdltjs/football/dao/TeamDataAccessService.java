@@ -34,17 +34,4 @@ public class TeamDataAccessService implements TeamDAO{
     public Team getSingleTeam(int teamId) {
         return null;
     }
-
-    @Override
-    public Connection connect(){
-        String dbFile = ":resource:sport.db";
-        String url = "jdbc:sqlite:"+dbFile;
-        Connection conn = null;
-        try {
-            conn = DriverManager.getConnection(url);
-        }catch(SQLException e) {
-            System.out.println(e);
-        }
-        return conn;
-    }
 }

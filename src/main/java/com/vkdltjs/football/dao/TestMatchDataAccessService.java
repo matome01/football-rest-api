@@ -17,9 +17,4 @@ public class TestMatchDataAccessService implements MatchDAO {
 
         return test;
     }
-
-    @Override
-    public Connection connect() {
-        return null;
-    }
 }
