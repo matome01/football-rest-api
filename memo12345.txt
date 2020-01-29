@@ -1,0 +1,10 @@
+/v1/seasons ->시즌들 (파라미터X)
+/v1/seasons/{시즌id}->시즌1개
+/v1/seasons/{시즌id}/matches ->매치들 (파라미터 팀, 경기일from, 경기일to)
+/v1/seasons/{시즌id}/teams ->팀들
+
+/v1/teams ->팀들
+/v1/teams/{팀id} ->팀1개
+/v1/teams/{팀id}/matches ->매치들(파라미터 from, to, 시즌id)
+
+/v1/matches ->매치들(파라미터 from, to, 팀id, 시즌id)
