@@ -58,8 +58,9 @@ Resources are represented as a JSON.
         "key" : "arsenal",
         "title" : "Arsenal FC",
         "synonyms" : "Arsenal|FC Arsenal"
-    },
+    }, {
     ...
+    }]
 }
 ```
 ##### Team
