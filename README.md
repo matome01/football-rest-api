@@ -68,10 +68,10 @@ Resources are represented as a JSON.
 ##### Team
 ```javascript
 {
-    "teamId" : 6,
-    "key" : "liverpool",
-    "title" : "Liverpool FC",
-    "synonyms" : "Liverpool|FC Liverpool"
+    "teamId" : 1,
+    "key" : "manutd",
+    "title" : "Manchester United FC",
+    "synonyms" : "Man Utd|Man. United|Manchester U.|Manchester Utd|Manchester United"
 }
 ```
 ##### Match (Any cancelled or future match's homeScore and awayScore is represented as ```null```.)
