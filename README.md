@@ -1,5 +1,6 @@
 # football-rest-api
-Rest api using java spring framework
+Rest api using java spring framework.<br/>
+Its data source is based on an open source project [footballdb](https://github.com/openfootball/england).
 
 ## API Documentation
 This API provides the English Premier League's information from 2010/11 to 2019/20 season.<br/>
