@@ -13,8 +13,7 @@ public class TestMatchDataAccessService implements MatchDAO {
     @Override
     public List<Match> getMatches(String from, String to, int teamId) {
         List<Match> test = new ArrayList<>();
-        test.add(new Match(1, Date.valueOf("2020-02-08"), "HoroTeam1", "HoroTeam2", 7, 4));
-
+        test.add(new Match(1, Date.valueOf("2020-02-08"), "TestTeam1", "TestTeam2", 7, 4));
         return test;
     }
 }
