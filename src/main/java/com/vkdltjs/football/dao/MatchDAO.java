@@ -7,17 +7,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.List;
 
-public interface MatchDAO {
+public interface MatchDAO extends CommonDAO{
     List<Match> getMatches(String from, String to, int teamId);
-    default Connection connect() {
-        String dbFile = ":resource:sport.db";
-        String url = "jdbc:sqlite:"+dbFile;
-        Connection conn = null;
-        try {
-            conn = DriverManager.getConnection(url);
-        }catch(SQLException e) {
-            System.out.println(e);
-        }
-        return conn;
-    };
 }
